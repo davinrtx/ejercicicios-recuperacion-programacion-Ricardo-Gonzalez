@@ -1,0 +1,11 @@
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <span id="university-info" class="text-muted d-block"></span>
+    </div>
+</footer>
+<script>
+    // Obtener el año actual
+    const currentYear = new Date().getFullYear();
+    // Establecer el nombre de la universidad y el año actual en el pie de página
+    document.getElementById('university-info').innerText = `Universidad Nacional Experimental en Telecomunicaciones e Informática © ${currentYear}`;
+</script>

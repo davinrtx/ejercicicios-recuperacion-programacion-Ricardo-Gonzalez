@@ -1,0 +1,92 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #e5e5f7;
+  opacity: 1;
+  background: linear-gradient(135deg, #444cf755 25%, transparent 25%) -18px 0/ 36px 36px, 
+              linear-gradient(225deg, #444cf7 25%, transparent 25%) -18px 0/ 36px 36px, 
+              linear-gradient(315deg, #444cf755 25%, transparent 25%) 0px 0/ 36px 36px, 
+              linear-gradient(45deg, #444cf7 25%, #e5e5f7 25%) 0px 0/ 36px 36px;
+  display: flex;
+  flex-direction: column;
+}
+html, body {
+  height: 100%;
+}
+
+.container {
+  flex: 1;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+}
+
+.footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+.footer a {
+  color: #00B7FF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.header {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center; /* Centrar el contenido del header */
+}
+
+.header a {
+  color: #00B7FF;
+}
+
+.card {
+  background-color: #ffffff;
+  border-color: #dddddd;
+}
+
+.card-title,
+.card-text {
+  color: #000000;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.form-control {
+  background-color: #ffffff;
+  color: #495057;
+  border-color: #ced4da;
+}
+
+.form-control::placeholder {
+  color: #6c757d;
+}
+
+.list-group-item {
+  background-color: #ffffff;
+  color: #495057;
+  border-color: #dddddd;
+}
+
+.container {
+  background-color: #ffffff;
+  border-color: #dddddd;
+}

@@ -1,0 +1,42 @@
+
+<%- include('partials/header') %> <!-- Incluir encabezado -->
+<body>
+  <div class="container">
+    <h1><%= title %></h1> <!-- Mostrar título -->
+    <% if (names.length > 0) { %> <!-- Verificar si hay nombres -->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% names.forEach(function(nameObj) { %> <!-- Iterar sobre nombres -->
+            <tr>
+              <td><%= nameObj.name %></td> <!-- Mostrar nombre -->
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p>No hay nombres guardados.</p> <!-- Mensaje si no hay nombres -->
+    <% } %>
+  </div>
+  <%- include('partials/footer') %> <!-- Incluir pie de página -->
+  <script>
+    // Obtener el parámetro success de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const success = urlParams.get('success');
+
+    // Mostrar aviso de éxito si success es true
+    if (success === 'true') {
+        Swal.fire({
+            title: '¡Éxito!',
+            text: 'El nombre se ha registrado correctamente.',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        });
+    }
+  </script>
+</body>
+</html>

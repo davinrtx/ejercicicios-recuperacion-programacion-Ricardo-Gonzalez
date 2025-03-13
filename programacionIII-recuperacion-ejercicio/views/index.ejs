@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+  <body>
+    <div class="container">
+      <h2>Bienvenido al <%= title %></h2>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Datos del Estudiante</h5>
+          <p class="card-text">Nombre: Ricardo Gonzalez</p>
+          <p class="card-text">Cedula de Identidad: 31.209.154</p>
+          <a href="/users/form" class="btn btn-primary">Ingresar Nombre</a>
+          <a href="/users/list" class="btn btn-secondary">Lista de Nombres</a>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+  </body>
+</html>

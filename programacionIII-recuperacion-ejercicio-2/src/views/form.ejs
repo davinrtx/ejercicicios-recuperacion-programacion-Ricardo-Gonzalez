@@ -1,0 +1,20 @@
+<%- include('partials/header', { title: 'Agregar Nombre' }) %>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1>Agregar un Nuevo Nombre</h1>
+                <form action="/add-name" method="POST" class="mb-3">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" class="form-control col-md-4" required> <!-- Input para el nombre a agregar -->
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar Nombre</button> <!-- Botón para enviar el formulario y agregar el nombre -->
+                </form>
+                <a href="/" class="btn btn-secondary">Volver a la Lista de Nombres</a> <!-- Enlace para volver a la lista de nombres -->
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "programacioniii-recuperacion-ejercicio-1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cookie-parser": "~1.4.7",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.4",
+    "http-errors": "~1.6.3",
+    "install": "^0.13.0",
+    "morgan": "~1.9.1",
+    "npm": "^11.2.0",
+    "uuid": "^11.1.0"
+  },
+  "packageManager": "pnpm@10.6.1+sha512.40ee09af407fa9fbb5fbfb8e1cb40fbb74c0af0c3e10e9224d7b53c7658528615b2c92450e74cfad91e3a2dcafe3ce4050d80bda71d757756d2ce2b66213e9a3"
+}
