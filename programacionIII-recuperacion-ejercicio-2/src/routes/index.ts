@@ -34,6 +34,11 @@ router.get('/form', (req: Request, res: Response) => {
 
 router.post('/add-name', (req: Request, res: Response) => {
     const { name } = req.body; // Obtiene el nombre del cuerpo de la solicitud
+    res.render('confirm', { name }); // Renderiza la vista de confirmación con el nombre
+});
+
+router.post('/confirm-name', (req: Request, res: Response) => {
+    const { name } = req.body; // Obtiene el nombre del cuerpo de la solicitud
     const names = getNames(); // Obtiene los nombres
     names.push(name); // Agrega el nuevo nombre
     saveNames(names); // Guarda los nombres actualizados
