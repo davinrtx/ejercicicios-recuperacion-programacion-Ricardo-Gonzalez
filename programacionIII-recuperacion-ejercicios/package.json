@@ -1,8 +1,8 @@
 {
-  "name": "ejercicio-2",
+  "name": "ejercicio-1y2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon"
   },
